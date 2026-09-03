@@ -1,0 +1,23 @@
+# Optimal Storage on Tape
+
+files = [10, 5, 15, 25, 30, 20]
+
+# Arrange files in ascending order
+files.sort()
+
+print("Optimal order:", files)
+
+# Calculate Retrieval Time
+rt = []
+total = 0
+
+for x in files:
+    total = total + x
+    rt.append(total)
+
+print("Retrieval Time:", rt)
+
+# Mean Retrieval Time
+mrt = sum(rt) / len(files)
+
+print("Mean Retrieval Time:", mrt)
